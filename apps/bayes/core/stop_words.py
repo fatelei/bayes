@@ -13,7 +13,7 @@ def get_stop_words(stop_words_txt):
     获取停用词
     """
     stop_words_list = []
-    func = lambda x: x.replace('\r\n', '').replace('\n', '').decode('gbk')
+    func = lambda x: x.replace('\r\n', '').replace('\n', '')
 
     if stop_words_txt:
         filename = stop_words_txt
